@@ -18,37 +18,37 @@ app.use(bodyParser.urlencoded({ extender: true }));
 
 app.use(bodyParser.json())
 
-
-app.listen(3000, function () {
-	console.log("Servidor corriendo en el puerto 3000");
-})
-
-app.use(express.static(path.join(__dirname, 'public_html')));
+app.use(express.static(__dirname + '/public'));
 
 
+mongoose.connect("mongodb+srv://Demian:57008345@cluster0.5lvxl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true })
+
+//Schema para usuario
+const UsuarioSchema = {
+	nombre: String,
+	correo: String,
+	contrasena: String
+}
+const usuario = mongoose.model('Usuarios', UsuarioSchema);
 
 //Altas trabajador
 app.post("/trabajadores", function (req, res) {
 	console.log("Alta exitosa");
 	var cipher = crypto.createCipher(algorithm, key); 
-	var codigo = req.body.codigo;
-	console.log(codigo);
-	if(codigo == '989'){
-	let newTrabajador = new trabajador({
+	let newUsuario = new usuario({
 		nombre: req.body.Nombre,
-		apellido: req.body.Apellido,
 		correo: req.body.Email,
-		contrasena: cipher.update(req.body.contrasenia, 'utf8', 'hex') + cipher.final('hex'),
-		tipo: req.body.Profesion
+		contrasena: cipher.update(req.body.contrasenia, 'utf8', 'hex') + cipher.final('hex')
 	});
 	res.render('Registro', { alta: 'true' })
-	newTrabajador.save();}
-	else{
-		res.render('Registro', { alta: 'false' })
-	}
+	newUsuario.save();
 })
 
 app.get("/", function (req, res) {
 	res.render('index', { success: '' })
 	
+})
+
+app.listen(3000, function () {
+	console.log("Servidor corriendo en el puerto 3000");
 })

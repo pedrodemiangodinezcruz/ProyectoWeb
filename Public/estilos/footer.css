@@ -1,0 +1,160 @@
+.e814_391 { 
+	overflow:hidden;
+}
+.e814_391 { 
+	width:100vw;
+	height:60vh;
+	position:absolute;
+	left: 0px;
+}
+.e814_392 { 
+	background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+	width:100vw;
+	height:100vh;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e814_393 { 
+	color:rgba(255, 255, 255, 1);
+	width:698.5531616210938px;
+	height:63.652957916259766px;
+	position:absolute;
+	left:643.404296875px;
+	top:199.47900390625px;
+	font-family:Rubik;
+	text-align:left;
+	font-size:36px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e814_394 { 
+	color:rgba(255, 255, 255, 1);
+	width:329.8723449707031px;
+	height:34.906463623046875px;
+	position:absolute;
+	left:132.765869140625px;
+	top:215.905517578125px;
+	font-family:Rubik;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+	line-height:px;
+}
+.e814_405 { 
+	width:221.6170196533203px;
+	height:108.8260269165039px;
+	position:absolute;
+	left:214.468017578125px;
+	top:103.99951171875px;
+}
+.ei814_405_82_40 { 
+	border-radius:500px;
+	background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+	width:73.87234497070312px;
+	height:74.06413269042969px;
+	position:absolute;
+	left:17.442081451416016px;
+	top:38.06073760986328px;
+}
+.e814_411 { 
+	width:520.85107421875px;
+	height:236.13194274902344px;
+	position:absolute;
+	left:38px;
+	top:0px;
+	background-image:url(../images/image_8.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e814_395 { 
+	width:387.8804931640625px;
+	height:101.22887420654297px;
+	position:absolute;
+	left:755.74462890625px;
+	top:268.26513671875px;
+}
+.e814_396 { 
+	width:92.56248474121094px;
+	height:101.22874450683594px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+.e814_397 { 
+	box-shadow:0px 13px 18px rgba(16.80078137665987, 18.626955784857273, 35.06250075995922, 0.50);
+	border-radius:500px;
+	background-image:url(../images/facebook.png);
+	width:92.56214904785156px;
+	height:101.22837829589844px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.e814_399 { 
+	width:92.56248474121094px;
+	height:101.22874450683594px;
+	position:absolute;
+	left:295.3179931640625px;
+	top:0.000244140625px;
+}
+.e814_400 { 
+	box-shadow:0px 13px 18px rgba(16.80078137665987, 18.626955784857273, 35.06250075995922, 0.50);
+	border-radius:500px;
+	background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+	width:92.56214904785156px;
+	height:101.22837829589844px;
+	position:absolute;
+	left:0.0001220703125px;
+	top:0px;
+}
+
+.e814_402 { 
+	width:92.56248474121094px;
+	height:101.22874450683594px;
+	position:absolute;
+	left:147.6593017578125px;
+	top:0.000244140625px;
+}
+.e814_403 { 
+	box-shadow:0px 13px 18px rgba(16.80078137665987, 18.626955784857273, 35.06250075995922, 0.50);
+	border-radius:500px;
+	background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+	width:92.56214904785156px;
+	height:101.22837829589844px;
+	position:absolute;
+	left:0.0001220703125px;
+	top:0px;
+}
+
+.fa {
+	padding: 20px;
+	font-size: 30px;
+	width: 1vw;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+	border-radius: 50%;
+  }
+  
+  .fa:hover {
+	  opacity: 0.7;
+  }
+  
+  .fa-facebook {
+	background: white;
+	color: rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+  }
+  .fa-twitter {
+	background: white;
+	color: rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+  }
+  .fa-instagram {
+	background: white;
+	color: rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+  }
