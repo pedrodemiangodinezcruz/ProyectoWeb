@@ -1,6 +1,27 @@
 {
-    "name": "Proyecto", "version": "1.0.0", "keywords": [
-        "util", "functional", "server", "client", "browser"
-    ], "author": "demia", "contributors": [
-    ], "dependencies": {}
+  "name": "proyecto",
+  "version": "1.0.0",
+  "keywords": [
+    "util",
+    "functional",
+    "server",
+    "client",
+    "browser"
+  ],
+  "author": "demia",
+  "contributors": [],
+  "description": "Proyecto desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrodemiangodinezcruz/ProyectoWeb.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrodemiangodinezcruz/ProyectoWeb/issues"
+  },
+  "homepage": "https://github.com/pedrodemiangodinezcruz/ProyectoWeb#readme"
 }
