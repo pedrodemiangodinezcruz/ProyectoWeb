@@ -4,7 +4,7 @@
 .e814_391 { 
 	width:100vw;
 	height:60vh;
-	position:absolute;
+	position:relative;
 	left: 0px;
 }
 .e814_392 { 
@@ -20,7 +20,7 @@
 	width:698.5531616210938px;
 	height:63.652957916259766px;
 	position:absolute;
-	left:643.404296875px;
+	left:50%;
 	top:199.47900390625px;
 	font-family:Rubik;
 	text-align:left;
@@ -71,7 +71,7 @@
 	width:387.8804931640625px;
 	height:101.22887420654297px;
 	position:absolute;
-	left:755.74462890625px;
+	left:60%;
 	top:268.26513671875px;
 }
 .e814_396 { 
