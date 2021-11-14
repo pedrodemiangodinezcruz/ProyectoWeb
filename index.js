@@ -7,9 +7,6 @@ const ejs = require('ejs');
 const methodOverride = require("method-override");
 const exp = require("constants");
 app.set('view engine', 'ejs');
-var Cryptr = require('cryptr');
-cryptr = new Cryptr('devnami');
-var crypto = require('crypto');
 var assert = require('assert');
 var fs = require('fs');
 require('dotenv/config');
@@ -21,7 +18,7 @@ app.use(bodyParser.json())
 app.use(express.static(__dirname + '/public'));
 
 
-mongoose.connect("mongodb+srv://Demian:57008345@cluster0.5lvxl.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", { useNewUrlParser: true })
+mongoose.connect("mongodb+srv://Demian:57008345@cluster0.5lvxl.mongodb.net/ProyectoWeb?retryWrites=true&w=majority", { useNewUrlParser: true })
 
 //Schema para usuario
 const UsuarioSchema = {
@@ -32,15 +29,14 @@ const UsuarioSchema = {
 const usuario = mongoose.model('Usuarios', UsuarioSchema);
 
 //Altas trabajador
-app.post("/trabajadores", function (req, res) {
+app.post("/usuarios", function (req, res) {
 	console.log("Alta exitosa");
-	var cipher = crypto.createCipher(algorithm, key); 
 	let newUsuario = new usuario({
 		nombre: req.body.Nombre,
 		correo: req.body.Email,
-		contrasena: cipher.update(req.body.contrasenia, 'utf8', 'hex') + cipher.final('hex')
+		contrasena: req.body.contrasenia
 	});
-	res.render('Registro', { alta: 'true' })
+	res.render('index', { alta: 'true' })
 	newUsuario.save();
 })
 
@@ -48,6 +44,13 @@ app.get("/", function (req, res) {
 	res.render('index', { success: '' })
 	
 })
+
+//Para cargar pagina de registro de usuarios
+app.get('/registrarUsuario', (req, res) => {
+	res.render('registro', { alta: '' })
+	
+})
+
 
 app.listen(3000, function () {
 	console.log("Servidor corriendo en el puerto 3000");

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<title>Inicio</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="../estilos/registro.css" rel="stylesheet" type="text/css">
+	<link href="../estilos/footer.css" rel="stylesheet" type="text/css">
+	<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class=e835_750>
+		<div class=e835_790>
+			<div class="e835_751"></div>
+			<div class=e835_752>
+				<div class=e835_753>
+					<div class="e835_754"></div><span class="e835_755">Registro</span>
+				</div><span class="e835_756">Iniciar Sesion</span>
+			</div>
+			<div class=e835_757><span class="e835_758">Inicio</span><span class="e835_759">Cursos</span><span
+					class="e835_760">Ayuda</span></div>
+			<div class=e835_761>
+				<div class="e835_762"></div>
+			</div>
+			<div class="e835_789"></div>
+		</div>
+		<form action="/usuarios" method="POST" style="width: 35%; position: absolute;">
+			<div>
+				<input autoComplete="off" name="Nombre" placeholder="Nombre" required="True"></input>
+			</div>
+			<input autoComplete="off" name="Email" placeholder="Email" type="email" required="True"></input>
+			<div>
+			</div>
+			<input autoComplete="off" name="contrasenia" placeholder="Contraseña" type="password" required="True"></input>
+			<div>
+				<input class="Button" type="submit" value="REGISTRATE" />
+			</div>
+		</form>
+	</div>
+
+</body>
+
+<!--Footer -->
+<%- include('footer') %>
+
+</html>
