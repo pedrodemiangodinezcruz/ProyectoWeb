@@ -9,37 +9,38 @@
 	<link href="../estilos/registro.css" rel="stylesheet" type="text/css">
 	<link href="../estilos/footer.css" rel="stylesheet" type="text/css">
 	<link href="../estilos/estilos.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-	<div class=e835_750>
-		<div class=e835_790>
-			<div class="e835_751"></div>
-			<div class=e835_752>
-				<div class=e835_753>
-					<div class="e835_754"></div><span class="e835_755">Registro</span>
-				</div><span class="e835_756">Iniciar Sesion</span>
-			</div>
-			<div class=e835_757><span class="e835_758">Inicio</span><span class="e835_759">Cursos</span><span
-					class="e835_760">Ayuda</span></div>
-			<div class=e835_761>
-				<div class="e835_762"></div>
-			</div>
-			<div class="e835_789"></div>
-		</div>
-		<form action="/usuarios" method="POST" style="width: 35%; position: absolute;">
-			<div>
-				<input autoComplete="off" name="Nombre" placeholder="Nombre" required="True"></input>
-			</div>
-			<input autoComplete="off" name="Email" placeholder="Email" type="email" required="True"></input>
-			<div>
-			</div>
-			<input autoComplete="off" name="contrasenia" placeholder="Contraseña" type="password" required="True"></input>
-			<div>
-				<input class="Button" type="submit" value="REGISTRATE" />
-			</div>
-		</form>
+	<div class=e835_750 style="background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);">
+		<!--Header -->
+		<%- include('header') %>
+			<form action="/usuarios" method="POST">
+				<div class="e835_725">
+					<div>
+						<a>Nombre</a><input autoComplete="off" name="Nombre" placeholder="Nombre"
+							required="True"></input>
+					</div>
+					<div>
+					<a>Correo</a>
+					<input autoComplete="off" name="Email" placeholder="Email" type="email" required="True"></input>
+					</div>
+					<div>
+						<a>Contraseña</a>
+					<input autoComplete="off" name="contrasenia" placeholder="Contraseña" type="password"
+						required="True"></input>
+						<a>Acepto terminos y condiciones</a>
+					</div>
+					<div >
+						<input class="e841_869" type="submit" value="REGISTRATE" />
+					</div>
+						<a>¿Ya tienes una cuenta?</a> <a href="/">Inicia sesion</a>
+				</div>
+				
+	</div>
+	</form>
 	</div>
 
 </body>
