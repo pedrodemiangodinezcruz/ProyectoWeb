@@ -39,7 +39,7 @@ app.post("/usuarios", function (req, res) {
 	res.render('index', { alta: 'true' })
 	newUsuario.save();
 })
-
+//Linea a cambiar para ver su pagina
 app.get("/", function (req, res) {
 	res.render('index', { success: '' })
 	
