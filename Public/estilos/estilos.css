@@ -617,8 +617,8 @@
 	border-bottom-right-radius:50px;
 }
 .e824_598:hover{
-	background-color:  rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 0.5);
-	opacity: 0.6;
+	background-color:  rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
+	color: white;
 }
 .e824_600 { 
 	color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
@@ -631,6 +631,9 @@
 	text-align:center;
 	font-size:18px;
 	letter-spacing:0;
+}
+.e824_600:hover {
+	color:white 
 }
 .e824_487 { 
 	overflow:hidden;
