@@ -3,7 +3,7 @@
 <html>
 
 <head>
-	<title>Inicio</title>
+	<title>Registro</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="../estilos/registro.css" rel="stylesheet" type="text/css">
@@ -17,28 +17,32 @@
 	<div class=e835_750 style="background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);">
 		<!--Header -->
 		<%- include('header') %>
-			<form action="/usuarios" method="POST">
-				<div class="e835_725">
-					<div>
-						<a>Nombre</a><input autoComplete="off" name="Nombre" placeholder="Nombre"
-							required="True"></input>
+		<div class="e835_762"></div>
+			<form action="/usuarios" method="POST" id="form">
+				<div class=e859_920>
+					<div class="e859_921"></div>
+						<input class="e859_927"  type="submit" value="Registrarme" />  
+					<span  class="e859_930">¿Ya tienes una cuenta? Inicia Sesión</span><span  class="e859_931">Registrate</span>
+					<div class=e859_932>
+					  <div class=e859_933>
+							<input autoComplete="off" class="e859_934" name="Nombre" placeholder="Nombre"  required="True"></input>
+						<span  class="e859_937">Nombre</span>
+					  </div>
+					  <div class=e859_938>
+						<span  class="e859_942">Correo institucional</span>
+							<input autoComplete="off" class="e859_939" name="Email" placeholder="Email" type="email" required="True"></input>
+						</div>
+					  <div class=e859_946>
+						<span  class="e859_950">Contraseña</span>
+							<input autoComplete="off" class="e859_947" name="contrasenia" placeholder="Contraseña" type="password" required="True"></input>
+					  </div>
 					</div>
-					<div>
-					<a>Correo</a>
-					<input autoComplete="off" name="Email" placeholder="Email" type="email" required="True"></input>
+					<div class=e859_943>
+					  <div class="e859_944"></div>
+					  <div class="e859_945"></div>
 					</div>
-					<div>
-						<a>Contraseña</a>
-					<input autoComplete="off" name="contrasenia" placeholder="Contraseña" type="password"
-						required="True"></input>
-						<a>Acepto terminos y condiciones</a>
-					</div>
-					<div >
-						<input class="e841_869" type="submit" value="REGISTRATE" />
-					</div>
-						<a>¿Ya tienes una cuenta?</a> <a href="/">Inicia sesion</a>
-				</div>
-				
+				  </div>
+
 	</div>
 	</form>
 	</div>

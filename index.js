@@ -41,7 +41,7 @@ app.post("/usuarios", function (req, res) {
 })
 //Linea a cambiar para ver su pagina
 app.get("/", function (req, res) {
-	res.render('karla', { success: '' })
+	res.render('index', { success: '' })
 	
 })
 
@@ -51,6 +51,10 @@ app.get('/registrarUsuario', (req, res) => {
 	
 })
 
+app.get('/iniciarSesion', (req, res) => {
+	res.render('inicioSesion', { alta: '' })
+	
+})
 
 app.listen(3000, function () {
 	console.log("Servidor corriendo en el puerto 3000");

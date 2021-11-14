@@ -760,4 +760,12 @@
 	font-size:36px;
 	letter-spacing:0;
 }
+/*Estilos para boton*/
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
 
+    text-decoration: none;
+    color: white;
+}

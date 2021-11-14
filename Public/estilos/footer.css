@@ -142,7 +142,15 @@ img {
 	margin: 5px 2px;
 	border-radius: 50%;
   }
-  
+  .fal {
+	padding: 20px;
+	font-size: 30px;
+	width: 1vw;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 12px;
+	border-radius: 50%;
+  }
   .fa:hover {
 	  opacity: 0.7;
   }
