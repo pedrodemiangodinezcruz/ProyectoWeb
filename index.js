@@ -41,7 +41,7 @@ app.post("/usuarios", function (req, res) {
 })
 //Linea a cambiar para ver su pagina
 app.get("/", function (req, res) {
-	res.render('index', { success: '' })
+	res.render('karla', { success: '' })
 	
 })
 
