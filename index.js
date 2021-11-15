@@ -36,7 +36,7 @@ app.post("/usuarios", function (req, res) {
 		correo: req.body.Email,
 		contrasena: req.body.contrasenia
 	});
-	res.render('index', { alta: 'true' })
+	res.render('registro', { alta: 'true' })
 	newUsuario.save();
 })
 
@@ -54,7 +54,7 @@ app.get('/registrarUsuario', (req, res) => {
 })
 
 app.get('/iniciarSesion', (req, res) => {
-	res.render('inicioSesion', { alta: '' })
+	res.render('inicioSesion', { success: 'true'} )
 	
 })
 //Autorizar usuario (Verificar si tiene cuenta)
@@ -85,13 +85,13 @@ app.post('/autorizaUsuario', (req, res) => {
 
 				} else {
 					console.log('No coincide la contraseña');
-					res.render('karla', { success: 'false'})
+					res.render('inicioSesion', { success: 'false'})
 				}
 			});
 
 		} else {
 			console.log('No coincide el correo');
-			res.render('karla', { success: 'false'})
+			res.render('inicioSesion', { success: 'false'})
 		}
 	});
 	
