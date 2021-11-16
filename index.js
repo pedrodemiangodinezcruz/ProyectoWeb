@@ -36,7 +36,7 @@ app.post("/usuarios", function (req, res) {
 		correo: req.body.Email,
 		contrasena: req.body.contrasenia
 	});
-	res.render('registro', { alta: 'true' })
+	res.render('index', { alta: 'true' })
 	newUsuario.save();
 })
 
@@ -49,7 +49,7 @@ app.get("/", function (req, res) {
 
 //Para cargar pagina de registro de usuarios
 app.get('/registrarUsuario', (req, res) => {
-	res.render('registro', { alta: '' })
+	res.render('registro', { alta: 'true' })
 	
 })
 
@@ -103,7 +103,7 @@ app.get('/consultaUno/:id', (req, res) => {
 	usuario.findOne({correo: id}, function (err, usuarios) {
 	console.log("valor del corre: " + id)
 	console.log("UsarioEncontrado: " + usuarios); 
-	res.render('index', { usuarios: usuarios, idUser: id }  )
+	res.render('UsuarioIndex', { usuarios: usuarios, idUser: id }  )
 })
 })
 
