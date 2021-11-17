@@ -43,7 +43,7 @@ app.post("/usuarios", function (req, res) {
 
 //Linea a cambiar para ver su pagina
 app.get("/", function (req, res) {
-	res.render('explora', { success: '' })
+	res.render('index', { success: '' })
 	
 })
 
