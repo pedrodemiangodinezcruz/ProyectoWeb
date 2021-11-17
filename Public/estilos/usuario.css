@@ -2118,6 +2118,51 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
+.e703_665_2{
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	background-image:url(../images/rectangle_262.png);
+	width:422px;
+	height:240px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e703_665_3{
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	background-image:url(../images/curso2.png);
+	width:422px;
+	height:240px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e703_665_4{
+	background-color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);
+	background-image:url(../images/curso3.png);
+	width:422px;
+	height:240px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	border-top-left-radius:16px;
+	border-top-right-radius:16px;
+	border-bottom-left-radius:16px;
+	border-bottom-right-radius:16px;
+	background-repeat:no-repeat;
+	background-size:cover;
+}
 .e893_1104 { 
 	width:51px;
 	height:50px;
@@ -2331,6 +2376,49 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
+.e703_706_2 { 
+	width:93px;
+	height:84px;
+	position:absolute;
+	left:21px;
+	top:248px;
+	border-top-left-radius:63px;
+	border-top-right-radius:63px;
+	border-bottom-left-radius:63px;
+	border-bottom-right-radius:63px;
+	background-image:url(../images/fer.jpeg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e703_706_3 { 
+	width:93px;
+	height:84px;
+	position:absolute;
+	left:21px;
+	top:248px;
+	border-top-left-radius:63px;
+	border-top-right-radius:63px;
+	border-bottom-left-radius:63px;
+	border-bottom-right-radius:63px;
+	background-image:url(../images/luis.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.e703_706_4 { 
+	width:93px;
+	height:84px;
+	position:absolute;
+	left:21px;
+	top:248px;
+	border-top-left-radius:63px;
+	border-top-right-radius:63px;
+	border-bottom-left-radius:63px;
+	border-bottom-right-radius:63px;
+	background-image:url(../images/dib.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
 /*Estilo modal del perfil*/
 .e958_322 { 
 	overflow:hidden;
@@ -2699,3 +2787,4 @@
 	background-repeat:no-repeat;
 	background-size:cover;
 }
+
