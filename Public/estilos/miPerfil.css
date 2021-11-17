@@ -153,7 +153,7 @@
 }
 .e924_640 { 
 	color:rgba(191.00000381469727, 191.00000381469727, 191.00000381469727, 1);
-	width:188px;
+	width:228px;
 	height:41px;
 	position:absolute;
 	left:196px;
@@ -161,7 +161,7 @@
 	font-family:Noto Sans;
 	text-align:center;
 	font-size:30px;
-	letter-spacing:0;
+	letter-spacing:-3px;
 }
 .e924_641 { 
 	color:rgba(196.00000351667404, 196.00000351667404, 196.00000351667404, 1);

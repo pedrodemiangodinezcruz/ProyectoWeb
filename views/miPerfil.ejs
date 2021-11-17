@@ -21,7 +21,9 @@
 	<!--Header -->
 	<%- include('headerUser') %>
 	<div class=e924_645><span  class="e924_637">Información del estudiante</span>
-		<div class="e924_638"></div><span  class="e924_639"><%= usuarios.nombre %></span><span  class="e924_640">A01654861</span><span  class="e924_641"><%= usuarios.correo %></span><span  class="e924_642">Información Académica</span><span  class="e924_643" style="text-align: center;
+		<div class="e924_638"></div><span  class="e924_639"><%= usuarios.nombre %></span><span  class="e924_640"><%= usuarios.correo[0].toUpperCase() %> 
+			<%= usuarios.correo[1] %> <%= usuarios.correo[2] %> <%= usuarios.correo[3] %> <%= usuarios.correo[4] %> <%= usuarios.correo[5] %>
+			 <%= usuarios.correo[6] %> <%= usuarios.correo[7] %> <%= usuarios.correo[8] %></span><span  class="e924_641"><%= usuarios.correo %></span><span  class="e924_642">Información Académica</span><span  class="e924_643" style="text-align: center;
 		align-content: center;">Estatus académico: Inscrito<br>
 	  
 		  Semestre acreditado: 06<br>
