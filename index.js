@@ -61,6 +61,16 @@ app.get('/ayudaUsuario/:id', (req, res) => {
 	res.render('ayudaUser', { usuarios: usuarios, idUser: id }  )
 })
 })
+//Metodo para mostar el nombre de la sesion e ir subir curso
+app.get('/subirCurso/:id', (req, res) => {
+	const { id } = req.params;
+	console.log('Correo recibido: ' + id)
+	usuario.findOne({correo: id}, function (err, usuarios) {
+	console.log("valor del corre: " + id)
+	console.log("UsarioEncontrado: " + usuarios); 
+	res.render('uploadCurso', { usuarios: usuarios, idUser: id }  )
+})
+})
 
 //Para cargar pagina de registro de usuarios
 app.get('/registrate', (req, res) => {
