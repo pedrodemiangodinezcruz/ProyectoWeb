@@ -46,13 +46,32 @@ app.get("/", function (req, res) {
 	res.render('index', { success: '' })
 	
 })
+/*Para cargar pagina de ayuda persepctiva del usuario
+app.get('/ayudaUser', (req, res) => {
+	res.render('ayudaUser', { alta: '' })
+	
+})*/
+//Metodo para mostar el nombre de la sesion e ir a ayuda
+app.get('/ayudaUsuario/:id', (req, res) => {
+	const { id } = req.params;
+	console.log('Correo recibido: ' + id)
+	usuario.findOne({correo: id}, function (err, usuarios) {
+	console.log("valor del corre: " + id)
+	console.log("UsarioEncontrado: " + usuarios); 
+	res.render('ayudaUser', { usuarios: usuarios, idUser: id }  )
+})
+})
 
 //Para cargar pagina de registro de usuarios
+app.get('/registrate', (req, res) => {
+	res.render('registro', { alta: '' })
+	
+})
+//Para cargar pagina de registro de usuarios con alta verdadera
 app.get('/registrarUsuario', (req, res) => {
 	res.render('registro', { alta: 'true' })
 	
 })
-
 app.get('/iniciarSesion', (req, res) => {
 	res.render('inicioSesion', { success: 'true'} )
 	

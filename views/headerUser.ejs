@@ -1,11 +1,14 @@
-<header>
-<div class="e883_971">
-	<div class=e883_972><span  class="e883_973"><%= usuarios.nombre %> </span><span  class="e883_974">Estudiante</span>
-	  
+
+<header style="z-index: 5;">
+<div class="e883_971"  style="z-index: 5;">
+	<div class=e883_972 style="z-index: 5;"><span  class="e883_973"><%= usuarios.nombre %> </span><span  class="e883_974">Estudiante</span>
 	  <div class="e883_977"></div>
 	  <div class="e883_986"></div>
 	</div>
-	<div class=e883_987><span  class="e883_988">Favoritos</span></div>
-	<div class=e883_1002><span  class="e883_1003">Salir</span></div>
+	<div class=e883_987><span  class="e883_988"><a class="button" style="color: black; text-decoration:none;" href="#fav">Favoritos</a></span></div>
+	<div class=e883_1002 style="z-index: 5;"><span  class="e883_1003">Salir</span></div>
   </div>
+  <div class=e883_1004  style="z-index: 5;"><span class="e883_1005"><a class="button" style="color: black; text-decoration:none;" href="/consultaUno/<%= usuarios.correo %>">Inicio</a></span>
+	<span  class="e883_1006"><a class="button" style="color: black; text-decoration:none;" href="/ayudaUsuario/<%= usuarios.correo %>">Cursos</a><span>
+	<span  class="e883_1007"><a class="button" style="color: black; text-decoration:none;" href="/ayudaUsuario/<%= usuarios.correo %>">Ayuda</a></span></div>
 </header>
