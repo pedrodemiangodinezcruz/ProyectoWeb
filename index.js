@@ -36,7 +36,7 @@ app.post("/usuarios", function (req, res) {
 		correo: req.body.Email,
 		contrasena: req.body.contrasenia
 	});
-	res.render('registro', { alta: 'true' })
+	res.render('index', { alta: 'true' })
 	newUsuario.save();
 })
 
@@ -46,13 +46,32 @@ app.get("/", function (req, res) {
 	res.render('index', { success: '' })
 	
 })
+/*Para cargar pagina de ayuda persepctiva del usuario
+app.get('/ayudaUser', (req, res) => {
+	res.render('ayudaUser', { alta: '' })
+	
+})*/
+//Metodo para mostar el nombre de la sesion e ir a ayuda
+app.get('/ayudaUsuario/:id', (req, res) => {
+	const { id } = req.params;
+	console.log('Correo recibido: ' + id)
+	usuario.findOne({correo: id}, function (err, usuarios) {
+	console.log("valor del corre: " + id)
+	console.log("UsarioEncontrado: " + usuarios); 
+	res.render('ayudaUser', { usuarios: usuarios, idUser: id }  )
+})
+})
 
 //Para cargar pagina de registro de usuarios
-app.get('/registrarUsuario', (req, res) => {
+app.get('/registrate', (req, res) => {
 	res.render('registro', { alta: '' })
 	
 })
-
+//Para cargar pagina de registro de usuarios con alta verdadera
+app.get('/registrarUsuario', (req, res) => {
+	res.render('registro', { alta: 'true' })
+	
+})
 app.get('/iniciarSesion', (req, res) => {
 	res.render('inicioSesion', { success: 'true'} )
 	
@@ -103,10 +122,20 @@ app.get('/consultaUno/:id', (req, res) => {
 	usuario.findOne({correo: id}, function (err, usuarios) {
 	console.log("valor del corre: " + id)
 	console.log("UsarioEncontrado: " + usuarios); 
-	res.render('index', { usuarios: usuarios, idUser: id }  )
+	res.render('UsuarioIndex', { usuarios: usuarios, idUser: id }  )
 })
 })
 
+//Metodo para mandar a perfil usuario
+app.get('/consultaPerfil/:id', (req, res) => {
+	const { id } = req.params;
+	console.log('Correo recibido: ' + id)
+	usuario.findOne({correo: id}, function (err, usuarios) {
+	console.log("valor del corre: " + id)
+	console.log("UsarioEncontrado: " + usuarios); 
+	res.render('miPerfil', { usuarios: usuarios, idUser: id }  )
+})
+})
 
 app.listen(3000, function () {
 	console.log("Servidor corriendo en el puerto 3000");
