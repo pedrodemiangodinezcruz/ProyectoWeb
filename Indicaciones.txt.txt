@@ -1,0 +1,6 @@
+Para correr el servidor se debera utilizar el comando
+"node index.js", acto seguido el servidor correra en el puerto 3000
+En caso de que los modulos "mongoose"
+no vengan instalados por defecto.
+Se debera correr el comando "npm install mongoose"
+
