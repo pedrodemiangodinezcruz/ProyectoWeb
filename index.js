@@ -126,6 +126,16 @@ app.get('/consultaUno/:id', (req, res) => {
 })
 })
 
+//Metodo para mandar a perfil usuario
+app.get('/consultaPerfil/:id', (req, res) => {
+	const { id } = req.params;
+	console.log('Correo recibido: ' + id)
+	usuario.findOne({correo: id}, function (err, usuarios) {
+	console.log("valor del corre: " + id)
+	console.log("UsarioEncontrado: " + usuarios); 
+	res.render('miPerfil', { usuarios: usuarios, idUser: id }  )
+})
+})
 
 app.listen(3000, function () {
 	console.log("Servidor corriendo en el puerto 3000");
