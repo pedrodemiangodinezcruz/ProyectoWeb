@@ -1,32 +1,21 @@
 .e814_391 { 
 	width:100vw;
 	height:60vh;
-<<<<<<< Updated upstream
-	position:relative;
-=======
 	overflow:hidden;
 	position:absolute;
->>>>>>> Stashed changes
 	bottom: 2px;
 	left: 0px;
-	top: 1200px;
-	
-	
+	top: 1975px;
+
 }
 .e814_392 { 
 	background-color:rgba(129.00000751018524, 106.00000128149986, 254.00000005960464, 1);
 	width:100vw;
 	height:100vh;
-<<<<<<< Updated upstream
-	position:relative;
-	bottom: 5px;
-	left:0px;
-=======
 	position:absolute;
 	left:0px;
 	bottom: 2px;
 	left: 0px;
->>>>>>> Stashed changes
 }
 .e814_393 { 
 	color:rgba(255, 255, 255, 1);
